@@ -1,0 +1,10 @@
+{
+  "baseline_branch": "baseline",
+  "component": "gradle",
+  "experiment_name": "experiment-gradle-9.9.0-rc-1",
+  "new_version": "9.9.0-rc-1",
+  "old_version": "9.8.2",
+  "renovate_pr_number": null,
+  "renovate_repo": null,
+  "variant_branch": "gradle-9.9.0-rc-1"
+}
