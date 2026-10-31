@@ -38,6 +38,9 @@ class CompositeBuildPluginAndroidLib : Plugin<Project> {
                 buildFeatures {
                     compose = true
                 }
+                lint {
+                    configureAndroidLint()
+                }
             }
 
             target.extensions.getByType(JavaPluginExtension::class.java).apply {
