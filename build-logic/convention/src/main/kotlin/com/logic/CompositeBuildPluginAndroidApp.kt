@@ -46,6 +46,9 @@ class CompositeBuildPluginAndroidApp : Plugin<Project> {
                     sourceCompatibility = JavaVersion.VERSION_23
                     targetCompatibility = JavaVersion.VERSION_23
                 }
+                lint {
+                    configureAndroidLint()
+                }
             }
             target.extensions.getByType(JavaPluginExtension::class.java).apply {
                 toolchain.languageVersion.set(org.gradle.jvm.toolchain.JavaLanguageVersion.of(23))

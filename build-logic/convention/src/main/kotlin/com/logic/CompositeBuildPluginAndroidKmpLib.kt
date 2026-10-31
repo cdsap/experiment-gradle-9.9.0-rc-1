@@ -31,6 +31,9 @@ class CompositeBuildPluginAndroidKmpLib : Plugin<Project> {
                     }
                     withJava()
                     androidResources.enable = true
+                    lint {
+                        configureAndroidLint()
+                    }
                 }
 
                 jvmToolchain(23)
